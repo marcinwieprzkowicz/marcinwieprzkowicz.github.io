@@ -1,1 +1,6 @@
-/bower_components
+bower_components/platform/*
+bower_components/polymer/*
+!bower_components/platform/platform.js
+!bower_components/platform/platform.js.map
+!bower_components/polymer/polymer.js
+!bower_components/polymer/polymer.js.map
