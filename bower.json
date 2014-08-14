@@ -1,0 +1,20 @@
+{
+  "name": "marcinwieprzkowicz.github.io",
+  "version": "0.0.1",
+  "dependencies": {
+    "polymer": "Polymer/polymer"
+  },
+  "homepage": "http://marcinwieprzkowicz.github.io/",
+  "authors": [
+    "Marcin Wieprzkowicz <marcin.wieprzkowicz@gmail.com>"
+  ],
+  "description": "Signature",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

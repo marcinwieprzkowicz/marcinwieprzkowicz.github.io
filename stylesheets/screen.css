@@ -1,0 +1,13 @@
+body {
+  background-color: #4d3a45;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin: 0;
+}
+
+mw-signature {
+  margin: -150px 0 0 -200px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
