@@ -1,3 +1,4 @@
+*.psd
 bower_components/platform/*
 bower_components/polymer/*
 !bower_components/platform/platform.js
