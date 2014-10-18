@@ -2,7 +2,8 @@
   "name": "marcinwieprzkowicz.github.io",
   "version": "0.0.1",
   "dependencies": {
-    "polymer": "Polymer/polymer"
+    "polymer": "Polymer/polymer",
+    "core-ajax": "Polymer/core-ajax#~0.4.2"
   },
   "homepage": "http://marcinwieprzkowicz.github.io/",
   "authors": [
