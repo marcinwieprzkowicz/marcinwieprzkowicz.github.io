@@ -31,7 +31,7 @@ a {
 
 .clearfix:before,
 .clearfix:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 
@@ -42,8 +42,8 @@ a {
 /*= icons
 ---------------------------------------------------------------------------- */
 .icon {
-  background: url(../images/icons.png) no-repeat;
   display: inline-block;
+  @include retina-image("../images/icons", 77px 30px);
 }
 
 .i-followers {
@@ -61,7 +61,7 @@ a {
 .i-location {
   background-position: -59px 0;
   height: 25px;
-  width: 19px;
+  width: 18px;
 }
 
 .wrapper {
