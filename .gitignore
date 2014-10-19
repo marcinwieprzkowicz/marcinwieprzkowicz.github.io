@@ -7,3 +7,4 @@ bower_components/polymer/*
 !bower_components/polymer/polymer.html
 !bower_components/polymer/polymer.js
 !bower_components/polymer/polymer.js.map
+.sass-cache
