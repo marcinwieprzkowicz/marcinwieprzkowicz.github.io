@@ -18,21 +18,21 @@
         </hgroup>
       </div>
       <div class="vcard clearfix">
-        <dl>
+        <dl class="publicRepos">
           <dt>
             <em class="icon i-repo"></em>
           </dt>
           <dd>{{github.public_repos}}</dd>
         </dl>
 
-        <dl>
+        <dl class="followers">
           <dt>
             <em class="icon i-followers"></em>
           </dt>
           <dd>{{github.followers}}</dd>
         </dl>
 
-        <dl>
+        <dl class="location">
           <dt>
             <em class="icon i-location"></em>
           </dt>
@@ -57,7 +57,16 @@
           });
 
           ajax.addEventListener('core-error', function () {
-            console.log('error');
+            self.github = {
+              'location': 'London, UK',
+              'followers': '26',
+              'public_repos': '8',
+              'company': 'PrimeModule',
+              'name': 'Marcin Wieprzkowicz',
+              'avatar_url': 'https://avatars3.githubusercontent.com/u/835511?v=2&s=460'
+            };
+
+            wrapper.classList.add('animated');
           });
 
           ajax.go();

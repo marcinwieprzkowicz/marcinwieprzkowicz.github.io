@@ -68,9 +68,9 @@ ul, li, h1, h2, dl, dt, dd {
   height: 300px;
   line-height: 1.4;
   position: relative;
-  width: 450px;
+  width: 460px;
 
-  @include transition(all 0.6s $ease-in-out-quart);
+  @include transition(transform 0.6s $ease-in-out-quart);
   @include transform(rotateX(90deg) matrix3d(1, 0, 0, 0,
                       0, 1, 0, 0.003,
                       0, 0, 1, 0,
@@ -83,6 +83,21 @@ ul, li, h1, h2, dl, dt, dd {
     .info {
       .avatar {
         @include animation(bubble 0.5s linear 0.5s 1 normal forwards);
+      }
+      hgroup {
+        h1, h2 {
+          opacity: 1;
+          margin-left: 0;
+        }
+      }
+    }
+    .vcard {
+      height: 130px;
+      .publicRepos,
+      .followers,
+      .location {
+        margin-top: 0;
+        opacity: 1;
       }
     }
   }
@@ -123,13 +138,20 @@ ul, li, h1, h2, dl, dt, dd {
   hgroup {
     color: #b6b6b6;
     padding-left: 125px;
+    h1, h2 {
+      opacity: 0;
+      @include transition(opacity 0.5s linear 0.5s,
+                          margin-left 0.5s linear 0.5s);
+    }
     h1 {
       font-size: 22px;
       font-weight: 400;
+      margin-left: 15px;
     }
     h2 {
       font-size: 13px;
       font-weight: 300;
+      margin-left: 35px;
     }
   }
 }
@@ -137,14 +159,31 @@ ul, li, h1, h2, dl, dt, dd {
 .vcard {
   background-color: #f5f5f5;
   border-radius: 0 0 2px 2px;
-  height: 130px;
-  padding-top: 30px;
-  @include box-sizing(border-box);
+  bottom: 0;
+  height: 0;
+  position: absolute;
+  width: 100%;
+  @include transition(height 0.5s ease-out 0.5s);
   dl {
     color: #b6b6b6;
     float: left;
+    opacity: 0;
+    margin-top: 20px;
+    padding-top: 30px;
     width: 33%;
     text-align: center;
+    &.publicRepos {
+      @include transition(margin-top 0.3s linear 0.8s,
+                          opacity 0.3s linear 0.8s);
+    }
+    &.followers {
+      @include transition(margin-top 0.3s linear 0.9s,
+                          opacity 0.3s linear 0.9s);
+    }
+    &.location {
+      @include transition(margin-top 0.3s linear 1s,
+                          opacity 0.3s linear 1s);
+    }
   }
   dt {
     height: 30px;
