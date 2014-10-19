@@ -13,8 +13,12 @@
           <img src="{{github.avatar_url}}" alt="{{github.name}}" />
         </div>
         <hgroup>
-          <h1>{{github.name}}</h1>
-          <h2>{{github.company}}</h2>
+          <h1>
+            <a href="{{github.html_url}}" title="{{github.name}}">{{github.name}}</a>
+          </h1>
+          <h2>
+            <a href="{{github.url}}" title="{{github.company}}">{{github.company}}</a>
+          </h2>
         </hgroup>
       </div>
       <div class="vcard clearfix">
@@ -58,11 +62,13 @@
 
           ajax.addEventListener('core-error', function () {
             self.github = {
-              'location': 'London, UK',
-              'followers': '26',
               'public_repos': '8',
-              'company': 'PrimeModule',
+              'followers': '26',
+              'location': 'London, UK',
               'name': 'Marcin Wieprzkowicz',
+              'company': 'PrimeModule',
+              'url': 'http://primemodule.com/',
+              'html_url': 'https://github.com/marcinwieprzkowicz/',
               'avatar_url': 'https://avatars3.githubusercontent.com/u/835511?v=2&s=460'
             };
 
