@@ -67,7 +67,7 @@ a {
 .wrapper {
   background-color: #fff;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 15px 20px 5px rgba(0, 0, 0, 0.23);
   display: block;
   font-family: inherit;
   font-weight: 300;
@@ -132,6 +132,9 @@ a {
     position: absolute;
     top: 30px;
     width: 110px;
+    a {
+      display: block;
+    }
     img {
       border-radius: 50%;
       height: 102px;

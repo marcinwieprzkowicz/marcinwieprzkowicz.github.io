@@ -10,17 +10,20 @@
     <div class="wrapper">
       <div class="info">
         <div class="avatar">
-          <img src="{{github.avatar_url}}" alt="{{github.name}}" />
+          <a href="{{github.html_url}}" title="{{github.name}}">
+            <img src="{{github.avatar_url}}" alt="{{github.name}}" />
+          </a>
         </div>
         <hgroup>
           <h1>
             <a href="{{github.html_url}}" title="{{github.name}}">{{github.name}}</a>
           </h1>
           <h2>
-            <a href="{{github.url}}" title="{{github.company}}">{{github.company}}</a>
+            <a href="{{github.blog}}" title="{{github.company}}">{{github.company}}</a>
           </h2>
         </hgroup>
       </div>
+
       <div class="vcard clearfix">
         <dl class="publicRepos">
           <dt>
@@ -67,7 +70,7 @@
               'location': 'London, UK',
               'name': 'Marcin Wieprzkowicz',
               'company': 'PrimeModule',
-              'url': 'http://primemodule.com/',
+              'blog': 'http://primemodule.com/',
               'html_url': 'https://github.com/marcinwieprzkowicz/',
               'avatar_url': 'https://avatars3.githubusercontent.com/u/835511?v=2&s=460'
             };
